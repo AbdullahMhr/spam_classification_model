@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='spam_classifier_model.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Spam Classifier</h1>
+        <form action="/predict" method="POST">
+            <label for="message">Enter a message or email to classify:</label><br>
+            <textarea id="message" name="message" rows="5" cols="50"></textarea><br><br>
+            <button type="submit">Check if it's Spam</button>
+        </form>
+
+        {% if result %}
+        <div id="output">
+            <h2>Classification Result:</h2>
+            <p>{{ result }}</p>
+            <p>Confidence: {{ confidence }}%</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

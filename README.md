@@ -5,7 +5,7 @@
 
 ## Introduction
 
-Welcome to the Spam Classification Model! This web app classifies messages as spam or not using machine learning.
+The *Spam Classification Model* is a web-based application that uses machine learning to classify messages as either spam or not spam. By leveraging natural language processing (NLP) techniques, this model predicts whether a message is unwanted (spam) or legitimate based on its content. The application provides a simple user interface, running on a local server, where users can input messages and get instant results.
 
 ## 🚀 Quick Start
 
@@ -40,15 +40,5 @@ Welcome to the Spam Classification Model! This web app classifies messages as sp
 - Python 3.x
 - Required dependencies (see requirements.txt)
 
-## 📂 Folder Structure
-
-
-Spam Classification Model/
-├── static/
-│   └── Spam_classifier_model.css
-├── templates/
-│   └── Spam_classifier_model.html
-├── app.py
-└── requirements.txt
 
 
